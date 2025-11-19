@@ -1,3 +1,17 @@
+## Fonts
+1. Cormorant : Raleway -> choosen
+2. Bodoni Moda : Montserrat
+3. Quattrocento : Questrial
+
+## Portfolio Websites to take inspiration from
+1. https://brittanychiang.com/
+2. https://lauren-waller.com/ -> choosen
+3. https://p5aholic.me/
+
+## Color 
+- dark: #333031
+- light: #EAE0D5
+
 # Portfolio_page
 This a repo to showcase my portfolio, In case you like it, feel free to copy it make changes according to your need. I will make a detailed guide for the same soon...
 
