@@ -1,10 +1,17 @@
 "use client";
 
 import { AnimatePresence, easeInOut, motion } from "motion/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [isTransitioning, setIsTransitioning] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsTransitioning(false)
+    }, 1000)
+  }, [])
+
   function handleNavigation() {
     setIsTransitioning(true);
     setTimeout(() => {
@@ -12,11 +19,12 @@ export default function Home() {
       // router.push(url)
       setIsTransitioning(false);
     }, 5000);
+
   }
 
   return (
-    <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <div className="font-cormorant text-5xl">
+    <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans">
+      <div className="font-cormorant text-5xl text-black">
         hello, <span className="font-raleway text-xl">how are you</span>
       </div>
       <AnimatePresence>
@@ -33,7 +41,7 @@ export default function Home() {
           ></motion.div>
         ) : null}
       </AnimatePresence>
-      <button onClick={() => handleNavigation()}> Go to Another Page
+      <button onClick={() => handleNavigation()} className="text-gray-300 z-100"> Go to Another Page
 
       </button>
     </div>

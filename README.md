@@ -12,6 +12,16 @@
 - dark: #333031
 - light: #EAE0D5
 
+
+## naming convention
+| Pattern     | Use Cases                                       | Benefits                                                                 | Drawbacks                                                   |
+|-------------|--------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------|
+| PascalCase  | React component names, interfaces, class names   | • Identifies React components easily<br>• Aligns with React's conventions<br>• Visually distinct | • Slightly harder to type<br>• May conflict with specific build systems |
+| camelCase   | JavaScript variables, functions, props           | • Standard for JavaScript<br>• Easy to write and read<br>• Works naturally for object properties | • Harder to read with long words<br>• Can obscure word boundaries |
+| kebab-case  | File names, URLs, CSS classes                    | • URL-friendly<br>• Highly readable<br>• Compatible with all systems      | • Requires conversion for JavaScript<br>• Needs extra handling during imports |
+| snake_case  | Constants                                        | • Separates words clearly<br>• Works well for long identifiers<br>• Platform-agnostic | • Rarely used in React projects<br>• Takes up more space visually |
+
+
 # Portfolio_page
 This a repo to showcase my portfolio, In case you like it, feel free to copy it make changes according to your need. I will make a detailed guide for the same soon...
 
