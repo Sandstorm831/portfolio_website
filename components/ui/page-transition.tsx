@@ -1,12 +1,18 @@
 import { cn } from "@/lib/utils";
 import { AnimatePresence, easeInOut, motion } from "motion/react";
 
+/**
+ *
+ * @param baseColor TailwindCSS background color className
+ * @param isTransitioning boolean State Variable, default true, false when page transitioning
+ * @returns AnimatePresence component to animate smooth page transitions
+ */
 export default function PageTransition({
   baseColor,
   isTransitioning,
 }: {
   baseColor: string;
-  isTransitioning: boolean
+  isTransitioning: boolean;
 }) {
   return (
     <AnimatePresence>
