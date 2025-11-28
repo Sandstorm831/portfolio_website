@@ -1,8 +1,8 @@
 "use client";
 
-import { AnimatePresence, easeInOut, motion } from "motion/react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import PageTransition from "@/components/ui/page-transition";
+import Navbar from "@/components/ui/navbar";
 
 export default function Home() {
   const [isTransitioning, setIsTransitioning] = useState(true);
@@ -17,11 +17,12 @@ export default function Home() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen items-center justify-center bg-[#EAE0D5] font-sans">
+    <div className="flex max-md:flex-col h-screen items-center bg-paper font-sans">
       <PageTransition
-        baseColor={"bg-[#333031]"}
+        baseColor={"bg-charcol"}
         isTransitioning={isTransitioning}
       />
+      <Navbar />
     </div>
   );
 }
