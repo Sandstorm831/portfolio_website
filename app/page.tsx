@@ -3,6 +3,7 @@
 import { useState } from "react";
 import PageTransition from "@/components/ui/page-transition";
 import Navbar from "@/components/ui/navbar";
+import Intro from "@/components/ui/Intro";
 
 export default function Home() {
   const [isTransitioning, setIsTransitioning] = useState(true);
@@ -17,12 +18,13 @@ export default function Home() {
   }
 
   return (
-    <div className="flex max-md:flex-col h-screen items-center bg-paper font-sans">
+    <div className="flex max-md:flex-col h-screen bg-paper font-sans">
       <PageTransition
         baseColor={"bg-charcol"}
         isTransitioning={isTransitioning}
       />
       <Navbar />
+      <Intro />
     </div>
   );
 }
