@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Navbar() {
   return (
-    <div className="flex md:flex-col md:justify-between text-paper md:h-full max-md:w-full z-10 max-md:sticky">
+    <div className="flex md:flex-col md:justify-between text-paper md:h-full max-md:w-full md:z-10 sticky top-0  max-md:z-20 max-md:pb-12">
       <div className="mt-8 md:mt-12 ml-4 md:ml-8 flex md:flex-col">
         <a
           href="https://www.linkedin.com/in/rohan-garg-1b6b40200/"
