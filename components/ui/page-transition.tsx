@@ -7,16 +7,10 @@ import { AnimatePresence, easeInOut, motion } from "motion/react";
  * @param isTransitioning boolean State Variable, default true, false when page transitioning
  * @returns AnimatePresence component to animate smooth page transitions
  */
-export default function PageTransition({
-  baseColor,
-  isTransitioning,
-}: {
-  baseColor: string;
-  isTransitioning: boolean;
-}) {
+export default function PageTransition({ baseColor }: { baseColor: string }) {
   return (
     <AnimatePresence>
-      {isTransitioning ? (
+      {
         <motion.div
           initial={{ y: "-100%" }}
           animate={{ y: "0%" }}
@@ -27,7 +21,7 @@ export default function PageTransition({
           }}
           className={cn("fixed top-0 left-0 w-full h-full", baseColor)}
         ></motion.div>
-      ) : null}
+      }
     </AnimatePresence>
   );
 }
