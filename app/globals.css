@@ -5,6 +5,15 @@
     --foreground: #171717;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none; /* IE + Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
 @theme {
     --color-charcol: #333031;
     --color-paper: #eae0d5;
