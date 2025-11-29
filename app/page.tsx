@@ -1,15 +1,15 @@
 "use client";
 
 import PageTransition from "@/components/ui/page-transition";
-import Navbar from "@/components/ui/navbar";
-import Intro from "@/components/ui/Intro";
+import HomeNavbar from "@/components/ui/home-navbar";
+import Intro from "@/components/ui/intro";
 import HomeMapper from "@/components/ui/home-mapper";
 
 export default function Home() {
   return (
     <div className="flex max-md:flex-col h-screen bg-paper">
-      <PageTransition baseColor={"bg-charcol"} />
-      <Navbar />
+      <PageTransition baseColor={"bg-charcol"} direction="bottom" />
+      <HomeNavbar />
       <div className="flex max-2xl:flex-col md:overflow-y-scroll no-scrollbar">
         <Intro />
         <HomeMapper />

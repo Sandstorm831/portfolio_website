@@ -4,14 +4,22 @@ import { AnimatePresence, easeInOut, motion } from "motion/react";
 /**
  *
  * @param baseColor TailwindCSS background color className
+ * @param direction Animation direction, "top" or "bottom"
  * @returns AnimatePresence component to animate smooth page transitions
  */
-export default function PageTransition({ baseColor }: { baseColor: string }) {
+export default function PageTransition({
+  baseColor,
+  direction = "bottom",
+}: {
+  baseColor: string;
+  direction: "bottom" | "top";
+}) {
+  const dir = direction === "bottom" ? "-100%" : "+100%";
   return (
     <AnimatePresence>
       {
         <motion.div
-          initial={{ y: "-100%" }}
+          initial={{ y: dir }}
           animate={{ y: "0%" }}
           exit={{ y: "+100%" }}
           transition={{
