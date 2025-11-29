@@ -35,8 +35,10 @@ export default function Navbar() {
         </a>
         <div className="w-20 h-0 max-md:mt-2.5 md:h-32 md:w-0 md:ml-2.5  border  border-paper" />
       </div>
-      <div className="max-md:hidden text-paper rotate-270 mb-12 ml-6 text-sm font-raleway">
-        © 2025
+      <div className="w-full">
+        <div className="max-md:hidden text-paper mb-12 mt-4 ml-4 whitespace-nowrap text-sm font-raleway">
+          <div className="rotate-270">© 2025</div>
+        </div>
       </div>
     </motion.div>
   );

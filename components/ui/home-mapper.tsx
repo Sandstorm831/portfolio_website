@@ -23,7 +23,7 @@ function Item({
   delay: number;
 }) {
   return (
-    <div className="font-medium text-7xl sm:text-8xl md:text-[120px] lg:text-[180px] xl:text-[220px] cursor-pointer origin-[0%_85%] hover:scale-y-110 duration-300 leading-none hover:duration-150">
+    <div className="font-medium text-6xl sm:text-8xl md:text-[120px] lg:text-[180px] xl:text-[220px] cursor-pointer origin-[0%_85%] hover:scale-y-110 duration-300 leading-none hover:duration-150">
       <BlurText text={title} delay={delay} direction="bottom" />
     </div>
   );
