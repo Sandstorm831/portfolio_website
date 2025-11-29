@@ -2,7 +2,7 @@
 
 import PageTransition from "@/components/ui/page-transition";
 import WorkNavbar from "@/components/ui/work-navbar";
-import Intro from "@/components/ui/intro";
+import WorkIntro from "@/components/ui/work-intro";
 import HomeMapper from "@/components/ui/home-mapper";
 
 export default function Work() {
@@ -11,7 +11,7 @@ export default function Work() {
       <PageTransition baseColor={"bg-paper"} direction="top" />
       <WorkNavbar />
       <div className="flex max-2xl:flex-col md:overflow-y-scroll no-scrollbar">
-        <Intro />
+        <WorkIntro />
         <HomeMapper />
       </div>
     </div>

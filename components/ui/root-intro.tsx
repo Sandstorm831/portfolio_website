@@ -16,7 +16,7 @@ export default function RootIntro({
       )}
     >
       <div className="flex justify-end">
-        <div className="flex flex-col font-raleway max-2xl:mt-16 mx-8 mb-12">
+        <div className="flex flex-col font-raleway max-2xl:mt-16 mx-8 mb-12 ml-16">
           {children}
         </div>
       </div>

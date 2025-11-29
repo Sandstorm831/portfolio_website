@@ -6,7 +6,7 @@ export default function HomeIntro() {
   return (
     <RootIntro textColor="paper">
       <div className="font-medium mb-6 text-md">
-        <BlurText text="Rohan Garg" delay={150} direction="bottom" />
+        <BlurText text="ROHAN GARG" delay={150} direction="bottom" />
       </div>
       <div className="font-normal text-md mb-6">
         <BlurText

@@ -2,7 +2,7 @@
 
 import PageTransition from "@/components/ui/page-transition";
 import HomeNavbar from "@/components/ui/home-navbar";
-import Intro from "@/components/ui/intro";
+import HomeIntro from "@/components/ui/home-intro";
 import HomeMapper from "@/components/ui/home-mapper";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
       <PageTransition baseColor={"bg-charcol"} direction="bottom" />
       <HomeNavbar />
       <div className="flex max-2xl:flex-col md:overflow-y-scroll no-scrollbar">
-        <Intro />
+        <HomeIntro />
         <HomeMapper />
       </div>
     </div>
