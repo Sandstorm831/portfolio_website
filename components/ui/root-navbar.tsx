@@ -24,7 +24,10 @@ export default function RootNavbar({
       transition={{ delay: 0.6, duration: 0 }}
       className={cn(
         "flex md:flex-col md:justify-between md:h-full max-md:w-full sticky top-0 md:z-10 max-md:z-20 max-md:pb-12",
-        `text-${textColor}`,
+        {
+          "text-paper": textColor === "paper",
+          "text-charcol": textColor === "charcol",
+        },
       )}
     >
       <div className="mt-8 md:mt-12 flex md:flex-col">
@@ -32,7 +35,10 @@ export default function RootNavbar({
         <div
           className={cn(
             "w-20 h-0 max-md:mt-2.5 md:h-32 md:w-0 ml-4 md:ml-[42px] border",
-            `border-${textColor}`,
+            {
+              "border-paper": textColor === "paper",
+              "border-charcol": textColor === "charcol",
+            },
           )}
         />
       </div>
@@ -40,7 +46,10 @@ export default function RootNavbar({
         <div
           className={cn(
             "max-md:hidden mb-12 mt-4 ml-4 whitespace-nowrap text-sm font-raleway",
-            `text-${textColor}`,
+            {
+              "text-paper": textColor === "paper",
+              "text-charcol": textColor === "charcol",
+            },
           )}
         >
           <div className="rotate-270">© 2025</div>

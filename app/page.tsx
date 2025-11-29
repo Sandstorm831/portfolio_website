@@ -12,7 +12,7 @@ export default function Home() {
       <HomeNavbar />
       <div className="flex max-2xl:flex-col md:overflow-y-scroll no-scrollbar">
         <HomeIntro />
-        <HomeMapper />
+        <HomeMapper textColor="paper" />
       </div>
     </div>
   );

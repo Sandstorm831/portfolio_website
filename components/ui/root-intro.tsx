@@ -12,7 +12,10 @@ export default function RootIntro({
     <div
       className={cn(
         "2xl:h-full max-2xl:w-full 2xl:w-[700px] z-10 flex 2xl:flex-col 2xl:justify-end 2xl:sticky 2xl:top-0 ",
-        `text-${textColor}`,
+        {
+          "text-paper": textColor === "paper",
+          "text-charcol": textColor === "charcol",
+        },
       )}
     >
       <div className="flex justify-end">

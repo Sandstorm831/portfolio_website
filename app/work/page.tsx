@@ -3,7 +3,7 @@
 import PageTransition from "@/components/ui/page-transition";
 import WorkNavbar from "@/components/ui/work-navbar";
 import WorkIntro from "@/components/ui/work-intro";
-import HomeMapper from "@/components/ui/home-mapper";
+import WorkMapper from "@/components/ui/work-mapper";
 
 export default function Work() {
   return (
@@ -12,7 +12,7 @@ export default function Work() {
       <WorkNavbar />
       <div className="flex max-2xl:flex-col md:overflow-y-scroll no-scrollbar">
         <WorkIntro />
-        <HomeMapper />
+        <WorkMapper textColor="charcol" />
       </div>
     </div>
   );
