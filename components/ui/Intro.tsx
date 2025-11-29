@@ -1,3 +1,4 @@
+import BlurChild from "./BlurChild";
 import BlurText from "./BlurText";
 
 export default function Intro() {
@@ -16,27 +17,34 @@ export default function Intro() {
             />
           </div>
           <div className="font-normal text-md mb-6">
-            <a
-              href="https://iitr.ac.in"
-              rel="noopener noreferer"
-              target="_blank"
-            >
-              <BlurText
-                text="IIT Roorkee 2024 Grauate"
-                delay={250}
-                direction="bottom"
-              />
-            </a>
+            <BlurChild delay={250} direction="bottom">
+              <span>
+                <a
+                  href="https://iitr.ac.in"
+                  rel="noopener noreferer"
+                  target="_blank"
+                  className="underline underline-offset-4"
+                >
+                  IIT Roorkee
+                </a>{" "}
+                2024 Grauate
+              </span>
+            </BlurChild>
           </div>
           <div className="font-normal text-md mb-1">
-            <a href="https://nwtl.in" rel="noopener noreferer" target="_blank">
-              <BlurText
-                text="Currently working as a Technical Advisor at NWTL"
-                delay={300}
-                direction="bottom"
-                className="underline underline-offset-4"
-              />
-            </a>
+            <BlurChild delay={300} direction="bottom">
+              <span>
+                Currently working as a Technical Advisor at &nbsp;
+                <a
+                  href="https://nwtl.in"
+                  rel="noopener noreferer"
+                  target="_blank"
+                  className="underline underline-offset-4"
+                >
+                  NWTL
+                </a>
+              </span>
+            </BlurChild>
           </div>
         </div>
       </div>
