@@ -2,7 +2,7 @@ import { motion, easeInOut } from "motion/react";
 
 export default function ProjectHero({title} : {title: string}) {
   return (
-    <div className="h-9/10 w-full bg-charcol pr-4 md:pr-20 pl-4">
+    <div className="h-9/10 w-full bg-charcol pr-4 md:pr-20 pl-4 shrink-0">
       <motion.div
         initial={{ height: "0%" }}
         animate={{ height: "100%" }}
