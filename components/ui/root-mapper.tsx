@@ -56,7 +56,7 @@ function Item({
   return (
     <Link
       href={link}
-      className="flex flex-col font-medium text-6xl sm:text-8xl md:text-[120px] lg:text-[180px] cursor-pointer"
+      className="flex flex-col font-medium text-4xl ssm:text-6xl sm:text-8xl md:text-[110px] xmd:text-[120px] lg:text-[150px] xlg:text-[180px] cursor-pointer"
     >
       <BlurText
         text={title}
