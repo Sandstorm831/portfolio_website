@@ -4,3 +4,8 @@ export type MapItem = {
   delay: number;
   subtitle?: string;
 };
+
+export type NavigatorType = {
+  text: string;
+  link: string;
+};

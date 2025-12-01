@@ -3,12 +3,12 @@
 import ProjectNavbar from "@/components/ui/project-navbar";
 import ProjectHero from "@/components/ui/project-hero";
 
-export default function Chessdom() {
+export default function ChessSH() {
   return (
     <div className="flex max-md:flex-col h-screen bg-charcol">
       <ProjectNavbar />
       <div className="flex flex-col h-full w-full">
-        <ProjectHero title="CHESSDOM" />
+        <ProjectHero title="CHESS-SH" />
       </div>
     </div>
   );
