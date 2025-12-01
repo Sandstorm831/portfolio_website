@@ -9,8 +9,6 @@ import ProjectButton from "@/components/ui/project-button";
 import ProjectNavigator from "@/components/ui/project-navigator";
 
 export default function NWTL() {
-  const techStack = ["TypeScript", "NextJS", "Tailwind CSS"];
-
   return (
     <div className="flex max-md:flex-col h-screen bg-charcol">
       <ProjectNavbar />
@@ -22,7 +20,7 @@ export default function NWTL() {
           responsibilities="Everything, developed the whole project from building to deploying  on my
               own"
           webLink="https://nwtl.in"
-          techStack={techStack}
+          techStack={["TypeScript", "NextJS", "Tailwind CSS"]}
         />
         <ProjectImageShelf images={["/work/nwtl/nwtl1.png"]} />
         <ProjectTextBlock

@@ -14,7 +14,7 @@ export default function ProjectBrief({
   return (
     <>
       <div className="w-full flex justify-center mt-24">
-        <div className="w-4/5 2xl:w-1/2 text-3xl md:text-5xl text-paper font-cormorant">
+        <div className="w-4/5 2xl:w-1/2 text-3xl md:text-5xl text-paper font-cormorant leading-16">
           {brief}
         </div>
       </div>
@@ -27,6 +27,8 @@ export default function ProjectBrief({
           <div className="w-full md:w-1/5 xl:w-1/4 text-md text-paper font-raleway flex flex-col mr-5">
             <div className="font-bold flex md:justify-end max-md:mt-8">URL</div>
             <a
+              target="_blank"
+              rel="noopener noreferrer"
               href={webLink}
               className="flex md:justify-end underline underline-offset-4"
             >
@@ -34,6 +36,8 @@ export default function ProjectBrief({
             </a>
             {githubLink ? (
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href={githubLink}
                 className="flex md:justify-end underline underline-offset-4"
               >
