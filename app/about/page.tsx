@@ -1,8 +1,10 @@
 "use client";
 
+import BlurText from "@/components/ui/BlurText";
 import PageTransition from "@/components/ui/page-transition";
 import ToWorkNavbar from "@/components/ui/to-work-navbar";
 import { yearsPassed } from "@/lib/utils";
+import { motion } from "motion/react";
 
 export default function About() {
   const professionalExp = yearsPassed(new Date("2022-04-10"));
@@ -14,7 +16,7 @@ export default function About() {
       <div className="z-10 flex flex-col h-full w-full overflow-y-scroll no-scrollbar pb-32">
         <div className="w-full flex flex-col">
           <div className="text-7xl ssm:text-9xl md:text-[150px] xlg:text-[180px] text-charcol font-cormorant ml-8 md:mt-32 md:ml-12 xl:ml-28">
-            About
+            <BlurText text="About" />
           </div>
           <div className="flex w-full justify-start mt-8">
             <div className="text-3xl font-bold text-charcol font-cormorant w-full md:text-5xl ml-8 max-md:mr-8 md:ml-12 xl:ml-28 md:w-4/5 xl:w-3/5 mr-4 ">
@@ -54,7 +56,16 @@ export default function About() {
             </div>
             <div className="flex-1 flex justify-center">
               <div className="w-[300px]">
-                <img src={"/rg-transparent.png"} />
+                <motion.div
+                  initial={{ scale: 0, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{
+                    delay: 0.2,
+                    duration: 0.5,
+                  }}
+                >
+                  <img src={"/rg-transparent.png"} />
+                </motion.div>
               </div>
             </div>
           </div>
