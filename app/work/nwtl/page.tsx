@@ -34,6 +34,7 @@ export default function NWTL() {
             "/work/nwtl/nwtl2.png",
             "/work/nwtl/nwtl3.png",
             "/work/nwtl/nwtl4.png",
+            "/work/nwtl/nwtl5.png",
           ]}
         />
         <ProjectButton buttonText="Check it out" link="https://nwtl.in" />

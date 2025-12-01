@@ -7,7 +7,7 @@ export default function ChessSH() {
   return (
     <div className="flex max-md:flex-col h-screen bg-charcol">
       <ProjectNavbar />
-      <div className="flex flex-col h-full w-full">
+      <div className="flex flex-col h-full w-full overflow-y-scroll no-scrollbar">
         <ProjectHero title="CHESS-SH" />
       </div>
     </div>

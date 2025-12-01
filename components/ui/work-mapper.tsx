@@ -15,12 +15,6 @@ export default function WorkMapper({ textColor }: { textColor: string }) {
       delay: 200,
       subtitle: "NextJS, ExpressJS, SocketIO",
     },
-    {
-      title: "CHESS-SH",
-      link: "/work/chess-sh",
-      delay: 250,
-      subtitle: "NextJS, Stockfish",
-    },
   ];
   return (
     <RootMapper textColor={textColor} mapItems={mapItems} direction="top" />
