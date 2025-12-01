@@ -1,7 +1,7 @@
 import RootNavbar from "./root-navbar";
 import Link from "next/link";
 
-export default function WorkNavbar() {
+export default function ToWorkNavbar() {
   return (
     <RootNavbar backgroundColor="#EAE0D5" textColor="charcol">
       <Link href="/">
