@@ -57,6 +57,7 @@ export default function Chessdom() {
         />
         <ProjectNavigator
           leftNavigator={{ text: "NWTL", link: "/work/nwtl" }}
+          rightNavigator={{text: "XYZ-LAW", link: "/work/xyz-law"}}
         />
       </div>
     </div>

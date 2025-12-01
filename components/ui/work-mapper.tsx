@@ -15,6 +15,12 @@ export default function WorkMapper({ textColor }: { textColor: string }) {
       delay: 200,
       subtitle: "NextJS, ExpressJS, SocketIO",
     },
+    {
+      title: "XYZ-LAW",
+      link: "/work/xyz-law",
+      delay: 250,
+      subtitle: "NextJS",
+    },
   ];
   return (
     <RootMapper textColor={textColor} mapItems={mapItems} direction="top" />
