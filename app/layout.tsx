@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${raleway.variable} ${cormorant.variable}`}>
-      <body className="h-full antialiased">{children}</body>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }

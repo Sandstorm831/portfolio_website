@@ -23,7 +23,7 @@ export default function ProjectHero({ title }: { title: string }) {
                   duration: 0.9,
                   ease: [0.87, 0, 0.13, 1],
                 }}
-                className="font-cormorant text-4xl ssm:text-6xl sm:text-8xl md:text-[110px] xmd:text-[120px] lg:text-[150px] xlg:text-[180px] text-charcol"
+                className="font-cormorant text-[48px] ssm:text-6xl sm:text-8xl md:text-[110px] xmd:text-[120px] lg:text-[150px] xlg:text-[180px] text-charcol"
               >
                 {title}
               </motion.div>

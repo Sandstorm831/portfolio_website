@@ -26,7 +26,7 @@ export default function PageTransition({
             duration: 0.6,
             ease: easeInOut,
           }}
-          className={cn("fixed top-0 left-0 w-full h-full", baseColor)}
+          className={cn("fixed top-0 left-0 w-full h-lvh", baseColor)}
         ></motion.div>
       }
     </AnimatePresence>

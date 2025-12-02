@@ -57,7 +57,7 @@ function Item({
   return (
     <Link
       href={link}
-      className="flex flex-col font-medium text-4xl ssm:text-6xl sm:text-8xl md:text-[110px] xmd:text-[120px] lg:text-[150px] xlg:text-[180px] cursor-pointer"
+      className="flex flex-col font-medium text-[48px] ssm:text-6xl sm:text-8xl md:text-[110px] xmd:text-[120px] lg:text-[150px] xlg:text-[180px] cursor-pointer max-lg:mb-4"
     >
       <BlurChild delay={delay} direction={direction}>
         <div className="origin-[0%_85%] hover:scale-y-110 duration-300 leading-none hover:duration-150">

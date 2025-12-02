@@ -23,7 +23,7 @@ export default function RootNavbar({
       animate={{ backgroundColor: backgroundColor }}
       transition={{ delay: 0.6, duration: 0 }}
       className={cn(
-        "flex md:flex-col md:justify-between md:h-full max-md:w-full sticky top-0 md:z-10 max-md:z-20 max-md:pb-12",
+        "flex md:flex-col md:justify-between md:h-full max-md:w-full sticky top-0 md:z-10 max-md:z-20 max-md:pb-6",
         {
           "text-paper": textColor === "paper",
           "text-charcol": textColor === "charcol",
