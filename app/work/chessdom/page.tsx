@@ -52,7 +52,7 @@ export default function Chessdom() {
           ]}
         />
         <ProjectButton
-          buttonText="Checkt it out"
+          buttonText="Check it out"
           link="https://chessdom.vercel.app"
         />
         <ProjectNavigator

@@ -26,7 +26,7 @@ export default function HomeIntro() {
             >
               IIT Roorkee
             </a>{" "}
-            2024 Grauate
+            2024 Graduate
           </span>
         </BlurChild>
       </div>
