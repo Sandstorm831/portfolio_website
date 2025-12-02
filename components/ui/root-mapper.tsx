@@ -69,7 +69,7 @@ function Item({
           text={"+ " + subtitle}
           delay={delay + 600}
           direction={direction}
-          className="font-medium text-[18px] lg:text-2xl mb-4 font-raleway"
+          className="font-medium text-[13px] sm:text-[18px] lg:text-2xl mb-4 font-raleway"
         />
       )}
       {}

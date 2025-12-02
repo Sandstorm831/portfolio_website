@@ -14,6 +14,6 @@ export default function Work() {
         <WorkIntro />
         <WorkMapper textColor="charcol" />
       </div>
-    </div>
+    </div>  
   );
 }

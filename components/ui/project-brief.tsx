@@ -14,7 +14,7 @@ export default function ProjectBrief({
   return (
     <>
       <div className="w-full flex justify-center mt-24">
-        <div className="w-4/5 2xl:w-1/2 text-3xl md:text-5xl text-paper font-cormorant leading-16">
+        <div className="w-4/5 2xl:w-1/2 text-3xl md:text-5xl text-paper font-cormorant ">
           {brief}
         </div>
       </div>
