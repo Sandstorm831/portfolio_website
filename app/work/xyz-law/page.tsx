@@ -10,7 +10,7 @@ import ProjectTextBlock from "@/components/ui/project-text-block";
 
 export default function XYZLaw() {
   return (
-    <div className="flex max-md:flex-col h-screen bg-charcol">
+    <div className="flex max-md:flex-col h-dvh bg-charcol">
       <ProjectNavbar />
       <div className="flex flex-col h-full w-full overflow-y-scroll no-scrollbar">
         <ProjectHero title="XYZ-Law" />

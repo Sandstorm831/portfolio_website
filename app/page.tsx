@@ -7,7 +7,7 @@ import HomeMapper from "@/components/ui/home-mapper";
 
 export default function Home() {
   return (
-    <div className="flex max-md:flex-col h-screen bg-paper">
+    <div className="flex max-md:flex-col h-dvh bg-paper">
       <PageTransition baseColor={"bg-charcol"} direction="bottom" />
       <HomeNavbar />
       <div className="flex max-2xl:flex-col md:overflow-y-scroll no-scrollbar">

@@ -16,7 +16,7 @@ export default function ProjectHero({ title }: { title: string }) {
           <div className="w-full h-full flex justify-center">
             <div className="flex flex-col justify-center">
               <motion.div
-                initial={{ y: "100vh", opacity: 0 }}
+                initial={{ y: "100dvh", opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{
                   delay: 0.3,

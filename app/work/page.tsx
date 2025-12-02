@@ -7,7 +7,7 @@ import WorkMapper from "@/components/ui/work-mapper";
 
 export default function Work() {
   return (
-    <div className="flex max-md:flex-col h-screen bg-charcol">
+    <div className="flex max-md:flex-col h-dvh bg-charcol">
       <PageTransition baseColor={"bg-paper"} direction="top" />
       <ToWorkNavbar />
       <div className="flex max-2xl:flex-col md:overflow-y-scroll no-scrollbar">
