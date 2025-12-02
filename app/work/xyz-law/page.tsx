@@ -28,9 +28,9 @@ export default function XYZLaw() {
           ]}
         />
         <ProjectTextBlock
-          text="Law firm websites usually tries to look very professional which ultimately
-                doesn't create a very friendly image for the company. Through the color-palette
-                and minimal design elements, this was an attempt to make law-firm websites more
+          text="Law firm websites usually try to look very professional which ultimately
+                doesn't create a very friendly image for the company. Through the color palette
+                and minimal design elements, this was an attempt to make law firm websites more
                 friendly and approachable"
         />
         <ProjectImageShelf

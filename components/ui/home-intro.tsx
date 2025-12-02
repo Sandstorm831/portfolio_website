@@ -10,7 +10,7 @@ export default function HomeIntro() {
       </div>
       <div className="font-normal text-md mb-6">
         <BlurText
-          text="Full-Stack Web Developer / Start-Up Focussed Web Expert"
+          text="Full-Stack Web Developer / Startup-Focused Web Expert"
           delay={200}
           direction="bottom"
         />
@@ -20,7 +20,7 @@ export default function HomeIntro() {
           <span>
             <a
               href="https://iitr.ac.in"
-              rel="noopener noreferer"
+              rel="noopener noreferrer"
               target="_blank"
               className="underline underline-offset-4"
             >
@@ -36,7 +36,7 @@ export default function HomeIntro() {
             Currently working as a Technical Advisor at &nbsp;
             <a
               href="https://nwtl.in"
-              rel="noopener noreferer"
+              rel="noopener noreferrer"
               target="_blank"
               className="underline underline-offset-4"
             >

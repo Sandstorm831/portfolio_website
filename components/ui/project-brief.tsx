@@ -41,7 +41,7 @@ export default function ProjectBrief({
                 href={githubLink}
                 className="flex md:justify-end underline underline-offset-4"
               >
-                Gitub
+                Github
               </a>
             ) : null}
           </div>

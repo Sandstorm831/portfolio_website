@@ -23,10 +23,10 @@ export default function About() {
           <AboutText
             paras={[
               `It all starts with my Operating System. In the first semester of
-                college, I have decided to switch my OS from windows to Linux,
+                college, I decided to switch my OS from Windows to Linux,
                 which marks my journey in the software engineering field. From
                 that point on I started using terminal (that black screen with
-                the blinking cursor you see in movies) as much as I can and
+                the blinking cursor you see in movies) as much as I could and
                 discovered the underworld of technology, the code that drives
                 these beautiful and clickable user interfaces.`,
               `Due to an inherent interest in Mathematics, I gravitated towards
@@ -36,10 +36,10 @@ export default function About() {
                 open-source software (the kind you can use for free, without
                 ads—like VLC), algorithmic trading, machine learning research,
                 competitive programming, and more. I've explored a lot of
-                paths, but creation of beautiful, smooth and no-fluff website
+                paths, but the creation of beautiful, smooth and no-fluff websites
                 was common in all fields and I thoroughly enjoyed that.
-                It's the part where creativity meets logic and problem
-                solving to create something unique.`,
+                It's the part where creativity meets logic and problem-solving
+                to create something unique.`,
             ]}
             imgStr="/rg-transparent.png"
           />
@@ -54,7 +54,7 @@ export default function About() {
           />
           <AboutSkills
             skills="TypeScript / JavaScript / Python / C++ / Docker / Git / ReactJS /
-          NextJS / NodeJS / ExpressJS / Tailwind CSS / Docker / Prisma /
+          NextJS / NodeJS / ExpressJS / Tailwind CSS / Prisma /
           SocketIO / Framer-Motion"
           />
         </div>

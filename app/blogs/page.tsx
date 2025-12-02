@@ -10,7 +10,7 @@ const blogs: Blog[] = [
   {
     title: "Password Cracking",
     description:
-      "Exploring the realm of password cracking and how some state-of-the-art password crackers and work",
+      "Exploring the realm of password cracking and how some state-of-the-art password crackers work",
     link: "https://medium.com/vlgiitr/password-cracking-1b14e0844404",
     type: "external",
   },
@@ -23,7 +23,7 @@ const blogs: Blog[] = [
   },
   {
     title: "ResNet-50",
-    description: "The complete guide to working of ResNet-50 neural network",
+    description: "The complete guide to the working of ResNet-50 neural network",
     link: "https://medium.com/@gargrohan138/resnet-50-810cf6f02799",
     type: "external",
   },

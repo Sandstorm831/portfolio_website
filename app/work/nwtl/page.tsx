@@ -15,9 +15,9 @@ export default function NWTL() {
       <div className="flex flex-col h-full w-full overflow-y-scroll no-scrollbar">
         <ProjectHero title="NWTL" />
         <ProjectBrief
-          brief="A website built in NextJS for NWTL : a semi-conductor material startup
-          redefining precision at nano-scale"
-          responsibilities="Everything, developed the whole project from building to deploying  on my
+          brief="A website built in NextJS for NWTL : a semiconductor material startup
+          redefining precision at nanoscale"
+          responsibilities="Everything, I developed the whole project from building to deploying on my
               own"
           webLink="https://nwtl.in"
           techStack={["TypeScript", "NextJS", "Tailwind CSS"]}
@@ -25,8 +25,8 @@ export default function NWTL() {
         <ProjectImageShelf images={["/work/nwtl/nwtl1.png"]} />
         <ProjectTextBlock
           text="As the Founding Engineer and current Technical Advisor of NWTL, I made
-        sure that website doesn't only convey about the product and contact
-        information but also the vision of the company and it's future
+        sure that the website not only conveys the product and contact
+        information but also the vision of the company and its future
         trajectory"
         />
         <ProjectImageShelf

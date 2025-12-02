@@ -15,7 +15,7 @@ export default function Chessdom() {
       <div className="flex flex-col h-full w-full overflow-y-scroll no-scrollbar">
         <ProjectHero title="CHESSDOM" />
         <ProjectBrief
-          brief="Chessdom is a web-based chess application, whose name comes from combining Chess and Wisdom. You can play with Stockfish (Bot) as well as Online. All the games played Online are stored in a game archive called Hall Of Games"
+          brief="Chessdom is a web-based chess application, whose name comes from combining Chess and Wisdom. You can play with Stockfish (Bot) as well as Online. All the games played Online are stored in a game archive called Hall of Games"
           responsibilities="Everything, from development to deployment"
           webLink="https://chessdom.vercel.app"
           githubLink="https://github.com/Sandstorm831/chessdom"
@@ -41,9 +41,9 @@ export default function Chessdom() {
           ]}
         />
         <ProjectTextBlock
-          text="A web-assembly-based Stockfish engine is used in the current version of the Chessdom app, which enables multi-threaded
-                nature by utilizing multiple web-workers. Earlier version had a server-based Stockfish engine, but due to scaling issues
-                and issues of longer response times between the moves, the WASM engine is selected."
+          text="A web-assembly-based Stockfish engine is used in the current version of the Chessdom app, which enables multi-threading
+                by utilizing multiple web-workers. The earlier version had a server-based Stockfish engine, but due to scaling issues
+                and issues of longer response times between the moves, the WASM engine was selected."
         />
         <ProjectImageShelf
           images={[
