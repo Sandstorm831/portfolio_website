@@ -19,8 +19,8 @@ export default function ProjectHero({ title }: { title: string }) {
                 initial={{ y: "100vh", opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{
-                  delay: 0.4,
-                  duration: 1.2,
+                  delay: 0.3,
+                  duration: 0.9,
                   ease: [0.87, 0, 0.13, 1],
                 }}
                 className="font-cormorant text-4xl ssm:text-6xl sm:text-8xl md:text-[110px] xmd:text-[120px] lg:text-[150px] xlg:text-[180px] text-charcol"

@@ -27,7 +27,7 @@ export default function WorkIntro() {
       </div>
       <div className="font-normal text-md mb-2">
         <BlurChild delay={300} direction="top">
-          <div>Backend : NodeJS, ExpressJS, Prisma</div>
+          <div>Backend : NodeJS, ExpressJS, Prisma, SocketIO</div>
         </BlurChild>
       </div>
     </RootIntro>

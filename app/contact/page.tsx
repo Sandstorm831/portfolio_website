@@ -19,7 +19,7 @@ export default function About() {
             email="gargrohan831@gmail.com"
             socials={[
               {
-                name: "Linkedin",
+                name: "LinkedIn",
                 link: "https://www.linkedin.com/in/rohan-garg-1b6b40200/",
               },
               { name: "X(Twitter)", link: "https://x.com/Rodes30947083" },

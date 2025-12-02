@@ -18,12 +18,12 @@ export default function BlogCard({
       className=" text-charcol py-6 md:pr-6 rounded-lg flex flex-col justify-between"
     >
       <div>
-        <h3 className="font-cormorant text-2xl mb-2">{blog.title}</h3>
-        <p className="font-raleway text-sm mb-4">{blog.description}</p>
+        <div className="font-cormorant text-3xl mb-2">{blog.title}</div>
+        <p className="font-raleway text-md mb-4">{blog.description}</p>
       </div>
       {blog.type === "internal" ? (
         <Link href={`/blogs/${blog.slug}`}>
-          <div className="flex font-raleway text-sm mt-4 text-charcol cursor-pointer">
+          <div className="flex font-raleway text-md mt-4 text-charcol cursor-pointer">
             <span className="hover:underline hover:underline-offset-2">
               Read More
             </span>
@@ -35,7 +35,7 @@ export default function BlogCard({
         </Link>
       ) : (
         <a href={blog.link} rel="noopener noreferrer" target="_blank">
-          <div className="flex font-raleway text-sm mt-4 text-charcol cursor-pointer">
+          <div className="flex font-raleway text-md mt-4 text-charcol cursor-pointer">
             <span className="hover:underline hover:underline-offset-2">
               Read More
             </span>
