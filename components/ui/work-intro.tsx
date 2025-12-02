@@ -22,7 +22,7 @@ export default function WorkIntro() {
       </div>
       <div className="font-normal text-md mb-2">
         <BlurChild delay={300} direction="top">
-          <div>Frontend : ReactJS, NextJS, TailWindCSS, Framer-Motion</div>
+          <div>Frontend : ReactJS, NextJS, Tailwind CSS, Framer-Motion</div>
         </BlurChild>
       </div>
       <div className="font-normal text-md mb-2">

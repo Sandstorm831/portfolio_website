@@ -13,4 +13,12 @@ export type NavigatorType = {
 export type SocialType = {
   name: string;
   link: string;
-}
+};
+
+export type Blog = {
+  title: string;
+  description: string;
+  slug?: string;
+  link?: string;
+  type: "internal" | "external";
+};
