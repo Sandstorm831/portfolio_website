@@ -9,3 +9,8 @@ export type NavigatorType = {
   text: string;
   link: string;
 };
+
+export type SocialType = {
+  name: string;
+  link: string;
+}
