@@ -17,7 +17,7 @@ export default function Chessdom() {
         <ProjectBrief
           brief="Chessdom is a web-based chess application, whose name comes from combining Chess and Wisdom. You can play with Stockfish (Bot) as well as Online. All the games played Online are stored in a game archive called Hall of Games"
           responsibilities="Everything, from development to deployment"
-          webLink="https://chessdom.vercel.app"
+          webLink="https://chessdom.rgdev.xyz"
           githubLink="https://github.com/Sandstorm831/chessdom"
           techStack={["NextJS", "ExpressJS", "SocketIO", "Prisma"]}
         />
@@ -53,7 +53,7 @@ export default function Chessdom() {
         />
         <ProjectButton
           buttonText="Check it out"
-          link="https://chessdom.vercel.app"
+          link="https://chessdom.rgdev.xyz"
         />
         <ProjectNavigator
           leftNavigator={{ text: "NWTL", link: "/work/nwtl" }}

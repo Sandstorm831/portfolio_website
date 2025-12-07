@@ -17,7 +17,7 @@ export default function XYZLaw() {
         <ProjectBrief
           brief="An attempt to improve upon the design of an established law firm website"
           responsibilities="Everything, I made this whole design revamp completely on my own"
-          webLink="https://xyz-law.vercel.app"
+          webLink="https://law.rgdev.xyz"
           githubLink="https://github.com/Sandstorm831/xyz-law"
           techStack={["TypeScript", "NextJS", "Tailwind CSS"]}
         />
@@ -41,7 +41,7 @@ export default function XYZLaw() {
         />
         <ProjectButton
           buttonText="Check it out"
-          link="https://xyz-law.vercel.app/"
+          link="https://law.rgdev.xyz/"
         />
         <ProjectNavigator
           leftNavigator={{ text: "CHESSDOM", link: "/work/chessdom" }}
