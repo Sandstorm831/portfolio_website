@@ -8,6 +8,12 @@ import BlogCard from "@/components/ui/blog-card";
 
 const blogs: Blog[] = [
   {
+    title: "B-Trees",
+    description: "A deep dive in the working and implementational know-hows of B-Trees",
+    slug: "btree",
+    type: 'internal'
+  },
+  {
     title: "Password Cracking",
     description:
       "Exploring the realm of password cracking and how some state-of-the-art password crackers work",
