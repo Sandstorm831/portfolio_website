@@ -22,3 +22,9 @@ export type Blog = {
   link?: string;
   type: "internal" | "external";
 };
+
+export type BlogStats = {
+  date: Date; // ISO DateTime object in UTC
+  badge: string; // all small
+  timeToRead: number; // in minutes
+};
