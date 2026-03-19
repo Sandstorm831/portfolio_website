@@ -15,6 +15,15 @@ export function yearsPassed(from: Date): number {
   return years;
 }
 
+export function monthsPassed(from: Date): number {
+  const today = new Date()
+  let monthsPassed = today.getMonth() - from.getMonth()
+  if (monthsPassed < 0 ){
+    monthsPassed += 11 + 1
+  }
+  return monthsPassed;
+}
+
 export function getTimeZone() {
   return Intl.DateTimeFormat().resolvedOptions().timeZone;
 }

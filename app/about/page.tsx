@@ -6,14 +6,16 @@ import AboutSubTitle from "@/components/ui/about-subtitle";
 import AboutText from "@/components/ui/about-text";
 import AboutTitle from "@/components/ui/about-title";
 import PageTransition from "@/components/ui/page-transition";
+import PageWrapper from "@/components/ui/page-wrapper";
 import ToWorkNavbar from "@/components/ui/to-work-navbar";
-import { yearsPassed } from "@/lib/utils";
+import { monthsPassed, yearsPassed } from "@/lib/utils";
 
 export default function About() {
   const professionalExp = yearsPassed(new Date("2022-04-10"));
   const webExp = yearsPassed(new Date("2023-06-10"));
+  const xPayExp = monthsPassed(new Date("2026-02-04"));
   return (
-    <div className="flex max-md:flex-col h-dvh bg-charcol">
+    <PageWrapper color="bg-charcol">
       <PageTransition baseColor={"bg-paper"} direction="top" />
       <ToWorkNavbar />
       <div className="z-10 flex flex-col h-full w-full overflow-y-scroll no-scrollbar pb-32">
@@ -50,6 +52,7 @@ export default function About() {
               `${webExp} years of experience in Full-Stack Web
                 Development`,
               `1 year as a founding engineer at NWTL`,
+              `${xPayExp} months as Founding frontend engnieer at xPay`
             ]}
           />
           <AboutSkills
@@ -59,6 +62,6 @@ export default function About() {
           />
         </div>
       </div>
-    </div>
+    </PageWrapper>
   );
 }

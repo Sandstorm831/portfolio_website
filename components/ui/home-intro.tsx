@@ -33,14 +33,14 @@ export default function HomeIntro() {
       <div className="font-normal text-md mb-1">
         <BlurChild delay={300} direction="bottom">
           <span>
-            Currently working as a Technical Advisor at &nbsp;
+            Currently working as a Founding frontend engineer at &nbsp;
             <a
-              href="https://nwtl.in"
+              href="https://www.xpaycheckout.com/"
               rel="noopener noreferrer"
               target="_blank"
               className="underline underline-offset-4"
             >
-              NWTL
+              xPay (YC W24)
             </a>
           </span>
         </BlurChild>
