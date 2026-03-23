@@ -5,13 +5,7 @@ import { formatDate, minutesToDuration } from "@/lib/utils";
 import { Dot } from "lucide-react";
 import { BlogStats } from "@/types";
 
-const Stats: BlogStats = {
-  date: new Date("2026-04-18T01:01:01Z"),
-  badge: "algorithm",
-  timeToRead: 15,
-};
-
-export default function BlogHero({ title }: { title: string }) {
+export default function BlogHero({ title, stats }: { title: string, stats: BlogStats }) {
   return (
     <div className="h-9/10 w-full bg-charcol pr-4 md:pr-20 pl-4 shrink-0">
       <motion.div
@@ -28,7 +22,7 @@ export default function BlogHero({ title }: { title: string }) {
           <div className="w-full h-full flex justify-center">
             <div className="flex flex-col justify-center">
               <WallPopoutAnimation className="font-cormorant text-xl md:text-3xl lg:text-[36px] text-paper">
-                <Badge className="text-sm lg:text-lg">{Stats.badge}</Badge>
+                <Badge className="text-sm lg:text-lg bg-paper text-charcol">{stats.badge}</Badge>
               </WallPopoutAnimation>
               <motion.div
                 initial={{ y: "100dvh", opacity: 0 }}
@@ -46,9 +40,9 @@ export default function BlogHero({ title }: { title: string }) {
                 className="font-cormorant text-lg md:text-3xl text-paper flex items-center"
                 fromBelow={false}
               >
-                {minutesToDuration(Stats.timeToRead)} to read
+                {minutesToDuration(stats.timeToRead)} to read
                 <Dot />
-                {formatDate(Stats.date)}
+                {formatDate(stats.date)}
               </WallPopoutAnimation>
             </div>
           </div>

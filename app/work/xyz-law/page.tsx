@@ -1,5 +1,6 @@
 "use client";
 
+import PageWrapper from "@/components/ui/page-wrapper";
 import ProjectBrief from "@/components/ui/project-brief";
 import ProjectButton from "@/components/ui/project-button";
 import ProjectHero from "@/components/ui/project-hero";
@@ -10,7 +11,7 @@ import ProjectTextBlock from "@/components/ui/project-text-block";
 
 export default function XYZLaw() {
   return (
-    <div className="flex max-md:flex-col h-dvh bg-charcol">
+    <PageWrapper color='bg-charcol'>
       <ProjectNavbar />
       <div className="flex flex-col h-full w-full overflow-y-scroll no-scrollbar">
         <ProjectHero title="XYZ-Law" />
@@ -47,6 +48,6 @@ export default function XYZLaw() {
           leftNavigator={{ text: "CHESSDOM", link: "/work/chessdom" }}
         />
       </div>
-    </div>
+    </PageWrapper>
   );
 }

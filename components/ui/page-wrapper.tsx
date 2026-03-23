@@ -9,7 +9,7 @@ export default function PageWrapper({
   color: string;
 }) {
   return (
-    <div className={cn("flex max-md:flex-col h-dvh bg-paper", color)}>
+    <div className={cn("flex max-md:flex-col h-dvh", color)}>
       {children}
     </div>
   );

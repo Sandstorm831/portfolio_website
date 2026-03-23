@@ -5,10 +5,11 @@ import ToWorkNavbar from "@/components/ui/to-work-navbar";
 import ContactLinks from "@/components/ui/contact-links";
 import ContactText from "@/components/ui/contact-text";
 import ContactTitle from "@/components/ui/contact-title";
+import PageWrapper from "@/components/ui/page-wrapper";
 
 export default function About() {
   return (
-    <div className="flex max-md:flex-col h-dvh bg-charcol">
+    <PageWrapper color="bg-charcol">
       <PageTransition baseColor={"bg-paper"} direction="top" />
       <ToWorkNavbar />
       <div className="z-10 flex flex-col h-full w-full overflow-y-scroll no-scrollbar pb-32">
@@ -28,6 +29,6 @@ export default function About() {
           />
         </div>
       </div>
-    </div>
+    </PageWrapper>
   );
 }

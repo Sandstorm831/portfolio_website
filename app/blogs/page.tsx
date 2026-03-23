@@ -5,6 +5,7 @@ import ToWorkNavbar from "@/components/ui/to-work-navbar";
 import AboutTitle from "@/components/ui/about-title";
 import { Blog } from "@/types";
 import BlogCard from "@/components/ui/blog-card";
+import PageWrapper from "@/components/ui/page-wrapper";
 
 const blogs: Blog[] = [
   {
@@ -37,7 +38,7 @@ const blogs: Blog[] = [
 
 export default function BlogsPage() {
   return (
-    <div className="flex max-md:flex-col h-dvh bg-charcol">
+    <PageWrapper color="bg-charcol" >
       <PageTransition baseColor={"bg-paper"} direction="top" />
       <ToWorkNavbar />
       <div className="z-10 flex flex-col h-full w-full overflow-y-scroll no-scrollbar pb-32">
@@ -48,6 +49,6 @@ export default function BlogsPage() {
           ))}
         </div>
       </div>
-    </div>
+    </PageWrapper>
   );
 }

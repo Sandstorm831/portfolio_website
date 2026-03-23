@@ -7,10 +7,11 @@ import ProjectImageShelf from "@/components/ui/project-image-shelf";
 import ProjectTextBlock from "@/components/ui/project-text-block";
 import ProjectButton from "@/components/ui/project-button";
 import ProjectNavigator from "@/components/ui/project-navigator";
+import PageWrapper from "@/components/ui/page-wrapper";
 
 export default function Chessdom() {
   return (
-    <div className="flex max-md:flex-col h-dvh bg-charcol">
+    <PageWrapper color="bg-charcol">
       <ProjectNavbar />
       <div className="flex flex-col h-full w-full overflow-y-scroll no-scrollbar">
         <ProjectHero title="CHESSDOM" />
@@ -60,6 +61,6 @@ export default function Chessdom() {
           rightNavigator={{text: "XYZ-LAW", link: "/work/xyz-law"}}
         />
       </div>
-    </div>
+    </PageWrapper>
   );
 }
