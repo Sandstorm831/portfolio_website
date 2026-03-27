@@ -7,7 +7,7 @@ import { BlogStats } from "@/types";
 
 export default function BlogHero({ title, stats }: { title: string, stats: BlogStats }) {
   return (
-    <div className="h-9/10 w-full bg-charcol pr-4 md:pr-20 pl-4 shrink-0">
+    <div className="h-9/10 w-full bg-charcol pr-4 md:pr-20 pl-4 shrink-0 pb-8">
       <motion.div
         initial={{ height: "0%" }}
         animate={{ height: "100%" }}

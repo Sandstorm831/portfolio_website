@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { BlogContentBlock } from "./blog-content-block";
 
-export function BlogTextBlock({
+export default function BlogTextBlock({
   children,
   textColor = "text-paper",
 }: {
