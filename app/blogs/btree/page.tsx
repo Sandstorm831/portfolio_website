@@ -1,5 +1,6 @@
 "use client";
 
+import { BlogContentBlock } from "@/components/ui/blog-content-block";
 import BlogHero from "@/components/ui/blog-hero";
 import BlogImageBlock from "@/components/ui/blog-image-block";
 import BlogSectionHeading from "@/components/ui/blog-section-heading";
@@ -13,6 +14,14 @@ const stats: BlogStats = {
   badge: "algorithm",
   timeToRead: 15,
 };
+
+function InlineCodeBlock({ children }: { children: string }) {
+  return (
+    <code className="bg-[#1E1E2E] text-paper rounded px-1.5 pt-1 font-mono font-medium">
+      {children}
+    </code>
+  );
+}
 
 export default function BTree() {
   return (
@@ -48,17 +57,52 @@ export default function BTree() {
           <span className="font-mono px-1">
             1 + (number of elements in that node)
           </span>{" "}
-          children with root node can be an exception. B-tree is stored in such
-          a manner that all the elements in the child node which is left of an
-          element are smaller than that element and the all the element in the
-          child node which is right to the element is bigger than that element.
-          While elements are themselves sorted in a node.
+          children with root node can be an exception. B-tree is constructed in
+          such a manner that all the elements in the child node which is left of
+          an element are smaller than that element and the all the element in
+          the child node which is right to the element is bigger than that
+          element. While elements are themselves sorted in a node.
         </BlogTextBlock>
         <BlogImageBlock
           src="/blogs/btree/btree_struct.svg"
           alt="structure of btree"
           description="comparison of elements and children"
         />
+        <BlogContentBlock>
+          <div className="w-full text-lg lg:text-xl font-raleway text-paper">
+            Here are a few structural characteristics that every b-tree follows
+          </div>
+          <ol className="pl-2 pt-4">
+            <li className="text-md lg:text-ld text-paper gap-x-1">
+              1.&nbsp; <InlineCodeBlock>degree</InlineCodeBlock> :&nbsp; This
+              defines minimum and maximum number of{" "}
+              <InlineCodeBlock>keys</InlineCodeBlock> and{" "}
+              <InlineCodeBlock>children</InlineCodeBlock> a node can hold.
+              <ol className="pl-4 pt-2">
+                <li className="text-md lg:text-ld text-paper gap-x-1">
+                  •&nbsp; <InlineCodeBlock>degree - 1</InlineCodeBlock> : &nbsp;
+                  minimum number of <InlineCodeBlock>keys</InlineCodeBlock> a
+                  node must have
+                </li>
+                <li className="text-md lg:text-ld text-paper gap-x-1">
+                  •&nbsp; <InlineCodeBlock>2 x degree - 1</InlineCodeBlock> :
+                  &nbsp; maximum number of{" "}
+                  <InlineCodeBlock>keys</InlineCodeBlock> a node can have
+                </li>
+                <li className="text-md lg:text-ld text-paper gap-x-1">
+                  •&nbsp; <InlineCodeBlock>2 x degree</InlineCodeBlock> : &nbsp;
+                  maximum number of <InlineCodeBlock>children</InlineCodeBlock>{" "}
+                  a node can have
+                </li>
+                <li className="text-md lg:text-ld text-paper gap-x-1">
+                  •&nbsp; <InlineCodeBlock>keys + 1</InlineCodeBlock> : &nbsp;
+                  number of <InlineCodeBlock>children</InlineCodeBlock> a node
+                  have
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </BlogContentBlock>
       </div>
     </PageWrapper>
   );
