@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant, Raleway } from "next/font/google";
 import "./globals.css";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const cormorant = Cormorant({
   subsets: ["latin"],
@@ -16,8 +17,8 @@ export const metadata: Metadata = {
   title: "RG",
   description: "Made by RG",
   icons: {
-    icon: "/favicon.ico"
-  }
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -27,7 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${raleway.variable} ${cormorant.variable}`}>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <TooltipProvider>{children}</TooltipProvider>
+      </body>
     </html>
   );
 }
