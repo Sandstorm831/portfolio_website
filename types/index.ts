@@ -28,3 +28,25 @@ export type BlogStats = {
   badge: string; // all small
   timeToRead: number; // in minutes
 };
+
+export interface BulletItem {
+  code: string;
+  label: string;
+  textColor: string;
+}
+
+export interface ListItem {
+  code: string;
+  label: React.ReactNode;
+  imageSrc?: string;
+  imageAlt?: string;
+  bullets?: BulletListProps;
+  textColor: string;
+}
+
+export interface ListItemProps extends ListItem {
+  index: number;
+}
+
+export type ListItemArrayProps = Omit<ListItem, "textColor">[];
+export type BulletListProps = Omit<BulletItem, "textColor">[];
