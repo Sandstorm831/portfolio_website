@@ -1,13 +1,15 @@
 "use client";
 
+import { ListItem } from "@/components/compounds/list-items";
 import { BlogContentBlock } from "@/components/ui/blog-content-block";
 import BlogHero from "@/components/ui/blog-hero";
 import BlogImageBlock from "@/components/ui/blog-image-block";
 import BlogSectionHeading from "@/components/ui/blog-section-heading";
 import BlogTextBlock from "@/components/ui/blog-text-block";
+import { InlineCodeBlock } from "@/components/ui/inline-code-block";
 import PageWrapper from "@/components/ui/page-wrapper";
 import BlogsNavbar from "@/components/ui/to-blogs-navbar";
-import { BlogStats } from "@/types";
+import { BlogStats, ListItemArrayProps } from "@/types";
 
 const stats: BlogStats = {
   date: new Date("2026-04-18T01:01:01Z"),
@@ -15,13 +17,62 @@ const stats: BlogStats = {
   timeToRead: 15,
 };
 
-function InlineCodeBlock({ children }: { children: string }) {
-  return (
-    <code className="bg-[#1E1E2E] text-paper rounded px-1.5 pt-1 font-mono font-medium">
-      {children}
-    </code>
-  );
-}
+const BTREE_TERMS: ListItemArrayProps = [
+  {
+    code: "keys",
+    label: "Number of elements a node holds",
+    imageSrc: "/blogs/btree/btree_keys.svg",
+    imageAlt: "keys",
+  },
+  {
+    code: "children",
+    label: "nodes that a given node points to via its child pointers.",
+    imageSrc: "/blogs/btree/btree_child.svg",
+    imageAlt: "children",
+  },
+  {
+    code: "root node",
+    label: "node of the tree that doesn't have any parent nodes",
+    imageSrc: "/blogs/btree/btree_root.svg",
+    imageAlt: "root node",
+  },
+  {
+    code: "leaf node",
+    label: "node of the tree that doesn't have any child nodes",
+    imageSrc: "/blogs/btree/btree_leaf.svg",
+    imageAlt: "leaf node",
+  },
+  {
+    code: "degree",
+    label: (
+      <>
+        This defines minimum and maximum number of{" "}
+        <InlineCodeBlock>keys</InlineCodeBlock> and{" "}
+        <InlineCodeBlock>children</InlineCodeBlock> a node can hold.
+      </>
+    ),
+    bullets: [
+      {
+        code: "degree - 1",
+        label: "minimum number of keys a node must have (except root node)",
+      },
+      {
+        code: "2 x degree - 1",
+        label: "maximum number of keys a node can have",
+      },
+      {
+        code: "2 x degree",
+        label: "maximum number of children a node can have",
+      },
+      { code: "keys + 1", label: "number of children a node have" },
+    ],
+  },
+  {
+    code: "self-balancing tree",
+    label:
+      "insertion and deletion works in such a way the all the leaf nodes always remain at the same level",
+  },
+];
 
 export default function BTree() {
   return (
@@ -72,36 +123,7 @@ export default function BTree() {
           <div className="w-full text-lg lg:text-xl font-raleway text-paper">
             Here are a few structural characteristics that every b-tree follows
           </div>
-          <ol className="pl-2 pt-4">
-            <li className="text-md lg:text-ld text-paper gap-x-1">
-              1.&nbsp; <InlineCodeBlock>degree</InlineCodeBlock> :&nbsp; This
-              defines minimum and maximum number of{" "}
-              <InlineCodeBlock>keys</InlineCodeBlock> and{" "}
-              <InlineCodeBlock>children</InlineCodeBlock> a node can hold.
-              <ol className="pl-4 pt-2">
-                <li className="text-md lg:text-ld text-paper gap-x-1">
-                  •&nbsp; <InlineCodeBlock>degree - 1</InlineCodeBlock> : &nbsp;
-                  minimum number of <InlineCodeBlock>keys</InlineCodeBlock> a
-                  node must have
-                </li>
-                <li className="text-md lg:text-ld text-paper gap-x-1">
-                  •&nbsp; <InlineCodeBlock>2 x degree - 1</InlineCodeBlock> :
-                  &nbsp; maximum number of{" "}
-                  <InlineCodeBlock>keys</InlineCodeBlock> a node can have
-                </li>
-                <li className="text-md lg:text-ld text-paper gap-x-1">
-                  •&nbsp; <InlineCodeBlock>2 x degree</InlineCodeBlock> : &nbsp;
-                  maximum number of <InlineCodeBlock>children</InlineCodeBlock>{" "}
-                  a node can have
-                </li>
-                <li className="text-md lg:text-ld text-paper gap-x-1">
-                  •&nbsp; <InlineCodeBlock>keys + 1</InlineCodeBlock> : &nbsp;
-                  number of <InlineCodeBlock>children</InlineCodeBlock> a node
-                  have
-                </li>
-              </ol>
-            </li>
-          </ol>
+          <ListItem listItemProps={BTREE_TERMS} textColor="text-paper" />
         </BlogContentBlock>
       </div>
     </PageWrapper>
