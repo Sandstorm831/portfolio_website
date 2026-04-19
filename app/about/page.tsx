@@ -10,7 +10,7 @@ import ToWorkNavbar from "@/components/ui/to-work-navbar";
 import { yearsPassed } from "@/lib/utils";
 
 export default function About() {
-  const professionalExp = yearsPassed(new Date("2022-04-10"));
+  const professionalExp = yearsPassed(new Date("2023-06-10"));
   const webExp = yearsPassed(new Date("2023-06-10"));
   return (
     <div className="flex max-md:flex-col h-dvh bg-charcol">
