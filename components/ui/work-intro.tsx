@@ -22,12 +22,12 @@ export default function WorkIntro() {
       </div>
       <div className="font-normal text-md mb-2">
         <BlurChild delay={300} direction="top">
-          <div>Frontend : ReactJS, NextJS, Tailwind CSS, Framer-Motion</div>
+          <div>Backend : NodeJS, ExpressJS, Prisma, SocketIO</div>
         </BlurChild>
       </div>
       <div className="font-normal text-md mb-2">
         <BlurChild delay={300} direction="top">
-          <div>Backend : NodeJS, ExpressJS, Prisma, SocketIO</div>
+          <div>Frontend : ReactJS, NextJS, Tailwind CSS, Framer-Motion</div>
         </BlurChild>
       </div>
     </RootIntro>

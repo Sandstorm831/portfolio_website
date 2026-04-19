@@ -36,10 +36,10 @@ export default function About() {
                 open-source software (the kind you can use for free, without
                 ads—like VLC), algorithmic trading, machine learning research,
                 competitive programming, and more. I've explored a lot of
-                paths, but the creation of beautiful, smooth and no-fluff websites
-                was common in all fields and I thoroughly enjoyed that.
-                It's the part where creativity meets logic and problem-solving
-                to create something unique.`,
+                paths, but I keep coming back to the systems that run beneath 
+                the surface—authentication, databases, networks, and everything 
+                in between. That's where I do my best work, solving hard problems 
+                most people never see, but everything depends on.`,
             ]}
             imgStr="/rg-transparent.png"
           />

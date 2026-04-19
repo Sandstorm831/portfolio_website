@@ -14,7 +14,7 @@ export default function About() {
       <div className="z-10 flex flex-col h-full w-full overflow-y-scroll no-scrollbar pb-32">
         <div className="w-full flex flex-col">
           <ContactTitle title="Hello." />
-          <ContactText text="Good design needn't be complicated — let's talk about yours." />
+          <ContactText text="Working systems needn't to be complicated — let's talk about yours." />
           <ContactLinks
             email="gargrohan831@gmail.com"
             socials={[
