@@ -39,7 +39,8 @@ export default function NWTL() {
         />
         <ProjectButton buttonText="Check it out" link="https://nwtl.in" />
         <ProjectNavigator
-          rightNavigator={{ text: "CHESSDOM", link: "/work/chessdom" }}
+          leftNavigator={{ text: "CHESSDOM", link: "/work/chessdom" }}
+          rightNavigator={{text: "XYZ-LAW", link: "/work/xyz-law"}}
         />
       </div>
     </div>

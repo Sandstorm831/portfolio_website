@@ -47,14 +47,14 @@ export default function About() {
             points={[
               `2024 IIT Roorkee Graduate`,
               `${professionalExp} years of experience as a professional software engineer`,
-              `${webExp} years of experience in Full-Stack Web
+              `${webExp} years of experience in Backend Software
                 Development`,
               `1 year as a founding engineer at NWTL`,
             ]}
           />
           <AboutSkills
-            skills="TypeScript / JavaScript / Python / C++ / Docker / Git / ReactJS /
-          NextJS / NodeJS / ExpressJS / Tailwind CSS / Prisma /
+            skills="NodeJS / ExpressJS / TypeScript / Docker / Git / Web-Sockets / Python / C++ / Javascript / ReactJS /
+          NextJS / Tailwind CSS / Prisma /
           SocketIO / Framer-Motion"
           />
         </div>

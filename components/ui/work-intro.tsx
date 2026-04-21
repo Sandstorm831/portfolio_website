@@ -9,20 +9,17 @@ export default function WorkIntro() {
         <BlurText text="WORK" delay={150} direction="top" />
       </div>
       <div className="font-normal text-md mb-6">
-        <BlurText
-          text="Here is a showcase of my best work in Full-Stack Web Development."
-          delay={200}
-          direction="top"
-        />
-      </div>
-      <div className="font-normal text-md mb-6">
-        <BlurChild delay={250} direction="top">
-          <span>Technologies I&apos;ve used and am Proficient in</span>
+        <BlurChild delay={200} direction="top">
+          <span>
+            A brief summary of my Work and Technologies am proficient in
+          </span>
         </BlurChild>
       </div>
       <div className="font-normal text-md mb-2">
         <BlurChild delay={300} direction="top">
-          <div>Backend : NodeJS, ExpressJS, Prisma, SocketIO</div>
+          <div>
+            Backend : NodeJS, ExpressJS, Web-Sockets, PostgreSQL, SocketIO
+          </div>
         </BlurChild>
       </div>
       <div className="font-normal text-md mb-2">

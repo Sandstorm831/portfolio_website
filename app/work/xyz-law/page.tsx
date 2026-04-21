@@ -44,7 +44,7 @@ export default function XYZLaw() {
           link="https://law.rgdev.xyz/"
         />
         <ProjectNavigator
-          leftNavigator={{ text: "CHESSDOM", link: "/work/chessdom" }}
+          leftNavigator={{ text: "NWTL", link: "/work/nwtl" }}
         />
       </div>
     </div>

@@ -10,7 +10,7 @@ export default function HomeIntro() {
       </div>
       <div className="font-normal text-md mb-6">
         <BlurText
-          text="Full-Stack Web Developer / Startup-Focused Web Expert"
+          text="Backend Software Engineer / Multi-threading architectures specialist"
           delay={200}
           direction="bottom"
         />
@@ -33,7 +33,7 @@ export default function HomeIntro() {
       <div className="font-normal text-md mb-1">
         <BlurChild delay={300} direction="bottom">
           <span>
-            Currently working as a Founding frontend engineer at &nbsp;
+            Currently working as a Founding engineer at &nbsp;
             <a
               href="https://www.xpaycheckout.com/"
               rel="noopener noreferrer"
